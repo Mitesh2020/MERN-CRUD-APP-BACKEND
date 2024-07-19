@@ -6,7 +6,15 @@ const userRoute = require("./routes/userRoute");
 const cors = require("cors");
 //const port = process.env.PORT || 4000;
 
-app.use(cors());
+const allowedOrigins = ['https://mern-crud-app-frontend-khaki.vercel.app/', 'https://mern-crud-app-backend-kohl.vercel.app/'];
+const corsOptions = {
+  origin: allowedOrigins,
+  optionsSuccessStatus: 200, // Some legacy browsers choke on 204
+  credentials: true // Required for sending cookies across domains (if applicable)
+};
+app.use(cors(corsOptions)); // Apply CORS middleware with options
+
+//app.use(cors());
 
 dotenv.config();
 
