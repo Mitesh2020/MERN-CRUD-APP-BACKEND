@@ -9,7 +9,7 @@ const cors = require("cors");
 const port = process.env.PORT || 4000;
 
 // CORS configuration (optional)
-const allowedOrigins = ['https://your-frontend-app.com', 'https://another-allowed-origin.com'];
+const allowedOrigins = ['https://mern-crud-app-frontend-khaki.vercel.app', 'https://mern-crud-app-backend-capv.onrender.com'];
 const corsOptions = {
   origin: allowedOrigins,
   optionsSuccessStatus: 200, // Some legacy browsers choke on 204
