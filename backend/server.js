@@ -6,7 +6,7 @@ const userRoute = require("./routes/userRoute");
 const cors = require("cors");
 //const port = process.env.PORT || 4000;
 
-const allowedOrigins = ['https://mern-crud-app-frontend-khaki.vercel.app/', 'https://mern-crud-app-backend-kohl.vercel.app/'];
+const allowedOrigins = ['https://mern-crud-app-frontend-khaki.vercel.app/', 'https://mern-crud-app-backend-d0aq.onrender.com'];
 const corsOptions = {
   origin: allowedOrigins,
   optionsSuccessStatus: 200, // Some legacy browsers choke on 204
